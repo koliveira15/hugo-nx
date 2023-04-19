@@ -1,0 +1,13 @@
+diff --git a/node_modules/hugo-installer/index.js b/node_modules/hugo-installer/index.js
+index 180a90a..8e7dc89 100644
+--- a/node_modules/hugo-installer/index.js
++++ b/node_modules/hugo-installer/index.js
+@@ -808,6 +808,8 @@ const checkForExistingBinary = async ({ arch, destination, extended, os, version
+             versionFileContent.version === version;
+         if (doesBinaryAlreadyExist) {
+             console.log('  Binary already exists!');
++        } else {
++          console.log('hit!!!!!!!!');
+         }
+         return doesBinaryAlreadyExist;
+     }

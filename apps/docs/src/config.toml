@@ -1,0 +1,15 @@
+baseURL = 'http://example.org/'
+languageCode = 'en-us'
+title = 'PI Docs'
+theme = 'relearn'
+contentDir = "../../../docs"
+publishDir = "../../../dist/apps/docs"
+baseUrl = "/docs"
+
+[params]
+  editURL = "https://github.com/McShelby/hugo-theme-relearn/edit/main/exampleSite/content/"
+  collapsibleMenu = true
+
+[outputs]
+  home = ["HTML", "JSON"]
+
