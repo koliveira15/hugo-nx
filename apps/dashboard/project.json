@@ -24,8 +24,7 @@
           }
         ],
         "styles": ["apps/dashboard/src/styles.css"],
-        "scripts": [
-        ]
+        "scripts": []
       },
       "configurations": {
         "production": {
@@ -79,7 +78,7 @@
       }
     },
     "lint": {
-      "executor": "@nrwl/linter:eslint",
+      "executor": "@nx/linter:eslint",
       "options": {
         "lintFilePatterns": [
           "apps/dashboard/**/*.ts",
@@ -88,8 +87,8 @@
       }
     },
     "test": {
-      "executor": "@nrwl/jest:jest",
-      "outputs": ["coverage/apps/dashboard"],
+      "executor": "@nx/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/apps/dashboard"],
       "options": {
         "jestConfig": "apps/dashboard/jest.config.ts",
         "passWithNoTests": true
